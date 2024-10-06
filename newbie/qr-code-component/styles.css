@@ -1,0 +1,57 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Outfit', Arial;
+}
+
+body{
+  background-color: hsl(212, 45%, 89%);
+}
+
+.container{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.box-container{
+  position: relative;
+  background-color: #fefefe;
+  width: 20rem;
+  height: 32rem;
+  border-radius: 1.1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.barcode-img{
+  width: 18em;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 1.1rem;
+}
+
+.text-container{
+  margin-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.h-text{
+  font-size: 1.3em;
+  width: 15rem;
+  margin-bottom: 1rem;
+  color: hsl(218, 44%, 22%);
+  font-weight: 700;
+}
+
+.p-text{
+  font-size: 1em;
+  width: 17rem;
+  color: hsl(220, 15%, 55%);
+}

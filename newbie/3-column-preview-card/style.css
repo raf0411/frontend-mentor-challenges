@@ -1,0 +1,139 @@
+body{
+  font-family: 'Lexend Deca', Arial;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+p, h1{
+  color: #fefe;
+}
+
+h1{
+  font-family: 'Big Shoulders Display';
+}
+
+.cards-container{
+  width: 55rem;
+  height: 30rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-top: 5rem;
+}
+
+#orange{
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+#blue{
+  background-color: hsl(184, 100%, 22%);
+}
+
+#green{
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.cards img{
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.cards h1{
+  color: hsl(0, 0%, 95%);
+  margin-left: 3rem;
+  font-size: 2.5em;
+}
+
+.cards p{
+  width: 12rem;
+  line-height: 1.8em;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.9em;
+  margin-left: 3rem;
+}
+
+#blue p{
+  width: 12.5rem;
+}
+
+#green p{
+  width: 13rem;
+}
+
+.cards button{
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  font-family: 'Lexend Deca';
+  width: 10rem;
+  height: 3rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  font-size: 1em;
+  transition: 0.1s;
+}
+
+#orange button{
+  color: hsl(31, 77%, 52%);
+}
+
+#orange button:hover{
+  background-color: hsl(31, 77%, 52%);
+  border-color: hsl(0, 0%, 95%);
+  border-style: solid;
+  color: hsl(0, 0%, 95%);
+}
+
+#blue button{
+  color: hsl(184, 100%, 22%);
+}
+
+#blue button:hover{
+  background-color: hsl(184, 100%, 22%);
+  border-color: hsl(0, 0%, 95%);
+  border-style: solid;
+  color: hsl(0, 0%, 95%);
+}
+
+#green button{
+  color: hsl(179, 100%, 13%);
+}
+
+#green button:hover{
+  background-color: hsl(179, 100%, 13%);
+  border-color: hsl(0, 0%, 95%);
+  border-style: solid;
+  color: hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 376px){
+  body{
+    margin-right: 5rem;
+    margin-top: -1rem;
+  }
+
+  .cards-container{
+    width: 10rem;
+    height: 10rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+  }
+
+  #orange{
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  #green{
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  .cards{
+    padding-bottom: 3rem;
+  }
+}

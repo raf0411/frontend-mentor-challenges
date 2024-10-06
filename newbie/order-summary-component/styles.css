@@ -1,0 +1,121 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  font-family: 'Red Hat Display', Arial;
+  background-image: url(order-summary-component-main/images/pattern-background-desktop.svg);
+  background-color: #E0E8FF;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.container{
+  display: grid;
+  background-color: hsl(225, 100%, 98%);
+  height: 45rem;
+  width: 28.14rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.image{
+  border-radius: 2rem 2rem 0 0;
+}
+
+.container h1{
+  font-weight: 700;
+  font-size: 1.7em;
+  color: hsl(223, 47%, 23%);
+  margin-top: 4rem;
+}
+
+.container p{
+  color: hsl(224, 23%, 55%);
+}
+
+.plan-container{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.plan-container img{
+  flex: 1;
+  object-fit: scale-down;
+  margin-left: 3rem;
+}
+
+.text-container{
+  text-align: start;
+  flex: 1;
+  font-size: 0.9em;
+  margin-left: -1.8rem;
+}
+
+.text-container h3{
+  color: hsl(223, 47%, 23%);
+}
+
+.text-container p{
+  margin-top: -0.8rem;
+}
+
+.plan-container a{
+  flex: 1;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+  transition: 0.4s;
+}
+
+.plan-container a:hover{
+  color: hsla(245, 75%, 52%, 0.7);
+  text-decoration: none;
+}
+
+.container button{
+  border-style: none;
+  font-size: 0.8em;
+}
+
+.proceed-button{
+  background-color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  color: #fefefe;
+  font-family: 'Red Hat Display';
+  height: 3rem;
+  width: 20rem;
+  border-radius: 0.6rem;
+  margin-left: 5rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.2s;
+}
+
+.proceed-button:hover{
+  background-color: hsla(245, 75%, 52%, 0.8);
+}
+
+.cancel-button{
+  background-color: hsl(225, 100%, 98%);
+  font-family: 'Red Hat Display';
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  height: 3rem;
+  width: 20rem;
+  border: none;
+  margin-left: 5rem;
+  cursor: pointer;
+  color: hsl(224, 23%, 55%);
+  transition: 0.2s;
+}
+
+.cancel-button:hover{
+  color: hsl(223, 47%, 23%);
+}

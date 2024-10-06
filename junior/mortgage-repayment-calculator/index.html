@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <!-- STYLE -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SCRIPT -->
+   <script src="app.js" defer></script>
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <main>
+    <div class="left-container">
+      <div class="header-left">
+        <h1>Mortgage Calculator</h1>
+        <button class="clear-btn">Clear All</button>
+      </div>
+
+      <form id="mortgage" action="">
+        <div class="input">
+          <label for="mortgage-amount">Mortgage Amount</label>
+          <div class="inner-ma-input">
+            <input type="number" step="any" id="mortgage-amount" name="mortgage-amount">
+            <span>£</span>
+          </div>
+          <label id="error-label" class="ma-error-label">This field is required</label>
+        </div>
+
+        <div class="term-rate">
+          <div class="input">
+            <label for="mortgage-term">Mortgage Term</label>
+            <div class="inner-input">
+              <input type="number" id="mortgage-term" name="mortgage-term">
+              <span id="years"><p>years</p></span>
+            </div>
+            <label id="error-label" class="mte-error-label">This field is required</label>
+          </div>
+          <div class="input">
+            <label for="interest-rate">Interest Rate</label>
+            <div class="inner-input">
+              <input type="number" step="any" id="interest-rate" name="interest-rate">
+              <span id="percentage">%</span>
+            </div>
+            <label id="error-label" class="ir-error-label">This field is required</label>
+          </div>
+        </div>
+
+        <div class="mortgage-type">
+          <p id="mortgage-type-text">Mortgage Type</p>
+          <div class="radio-box">
+            <input type="radio" name="mortgage-type" id="repayment" value="repayment">
+            <label for="repayment">Repayment</label>
+          </div>
+          <div class="radio-box">
+            <input type="radio" name="mortgage-type" id="interest_only" value="interest_only">
+            <label for="interest_only">Interest Only</label>
+          </div>
+          <label id="error-label" class="mt-error-label">This field is required</label>
+        </div>
+
+        <button form="mortgage" class="submit-btn">Calculate Repayments</button>
+      </form>
+    </div>
+
+    <div class="right-container">
+      <div class="empty">
+        <img src="./assets/images/illustration-empty.svg" alt="empty illustration">
+        <h1>Results shown here</h1>
+        <p>Complete the form and click "calculate repayments" to see what your monthly repayments would be.</p>
+      </div>
+
+      <!-- <div class="completed">
+        <div class="header-right">
+          <h1>Your results</h1>
+          <p>
+            Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.
+          </p>
+        </div>
+
+        <div class="results">
+          <div class="upper-result">
+            <p>Your monthly repayments</p>
+            <p id="monthly-result" class="monthly-result">£1,787.74</p>
+          </div>
+          <div class="bottom-result">
+            <p>Total you'll repay over the term</p>
+            <p id="repay-result" class="repay-result">£539,322.94</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </main>
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/raf0411" target="_blank">@raf0411</a>.
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,178 @@
+:root{
+  --clr-primary-400: hsl(215, 51%, 70%);
+  --clr-primary-500: hsl(178, 100%, 50%);
+
+  --clr-neutral-700: hsl(217, 54%, 11%);
+  --clr-neutral-800: hsl(216, 50%, 16%);
+  --clr-neutral-900: hsl(215, 32%, 27%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --ff-base: 'Outfit', sans-serif;
+
+  --fw-thin: 300;
+  --fw-regular: 400;
+  --fw-bold: 600;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+img, svg{
+  display: block;
+  max-width: 100%;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: 1em;
+  background-color: var(--clr-neutral-700);
+  color: var(--clr-neutral-100);
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.container{
+  background-color: var(--clr-neutral-800);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.5rem;
+  max-width: 20rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.nft-title{
+  font-size: 1.5em;
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+}
+
+.nft-desc{
+  font-weight: var(--fw-thin);
+  color: var(--clr-primary-400);
+}
+
+.main-img{
+  width: 20rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.img-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-icon{
+  position: absolute;
+  opacity: 0;
+}
+
+.price-days-container{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+
+  /* Creating the line */
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  padding-bottom: 1rem;
+  border-color: var(--clr-neutral-900);
+}
+
+.price, .days{
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Fixing the squished icons */
+.price img, .days img{
+  object-fit: contain;
+}
+
+.price p{
+  color: var(--clr-primary-500);
+}
+
+.days p{
+  color: var(--clr-primary-400);
+}
+
+.profile{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.profile .creation-text{
+  color: var(--clr-primary-400);
+}
+
+.profile .name{
+  cursor: pointer;
+}
+
+.profile .profile-pic{
+  width: 2rem;
+  border-radius: 2rem;
+  border-style: solid;
+  border-width: 1.5px;
+}
+
+/* Hovering State */
+.nft-title:hover, .profile .name:hover{
+  color: var(--clr-primary-500);
+}
+
+.img-container:hover .view-icon{
+  opacity: 1;
+}
+
+.main-img:hover{
+  opacity: 0.5;
+}
+
+.nft-title, .profile .name, .img-container .view-icon, .main-img{
+  transition: 0.5s ease;
+}

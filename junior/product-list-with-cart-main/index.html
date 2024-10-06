@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- STYLES -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- FONTS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+   <!-- SCRIPT -->
+    <script src="script.js" type="module" defer></script>
+</head>
+<body>
+
+  <main>
+    <div class="left-container">
+      <h1 class="text-xl">Desserts</h1>
+
+      <div class="deserts">
+
+      </div>
+    </div>
+
+    <div class="right-container">
+      <div class="cart">
+        <h1 id="cart-count">Your Cart (0)</h1>
+        <div class="empty-cart-section">
+          <div class="empty-cart">
+            <img src="./assets/images/illustration-empty-cart.svg" alt="empty cart illustration">
+            <p>Your added items will appear here</p>
+          </div>
+        </div>
+
+        <!-- <div class="filled-cart">
+          <div class="item">
+            <div class="inner-item">
+              <p class="item-name">Classic Tiramisu</p>
+              <div class="quantity-price">
+                <p class="quantity">1x</p>
+                <p class="price">@ $5.50</p>
+                <p class="total-price">$5.50</p>
+              </div>
+            </div>
+            <button class="btn cancel-btn">
+              <img src="./assets/images/icon-remove-item.svg" alt="x icon">
+            </button>
+          </div>
+
+          <div class="total">
+            <p>Order Total</p>
+            <h1 class="text-xl">$46.50</h1>
+          </div>
+
+          <div class="carbon">
+            <img src="./assets/images/icon-carbon-neutral.svg" alt="carbon neutral icon">
+            <p>This is a <span>carbon-neutral</span> delivery</p>
+          </div>
+
+          <button class="btn order-btn">Confirm Order</button>
+        </div>
+      </div> -->
+    </div>
+  </main>
+
+  <div class="confirm-popup">
+    <div class="content">
+      <div class="upper-container">
+        <img src="./assets/images/icon-order-confirmed.svg" alt="checked icon">
+        <h1>Order Confirmed</h1>
+        <p>We hope you enjoy your food!</p>
+      </div>
+  
+      <div class="item-list">
+        <div class="item">
+          <div class="container">
+            <img src="./assets/images/image-baklava-desktop.jpg" alt="desert img">
+          
+            <div class="text-container">
+              <p class="desert-name">Classic Tiramisu</p>
+              <div class="quantity-price">
+                <p class="quantity">1x</p> <p class="price">@ $5.50</p>
+              </div>
+            </div>
+          </div>
+          
+          <p class="total-item-price">$5.50</p>
+        </div>
+
+        <div class="order-total-container">
+          <p>Order Total</p>
+          <h1 class="total-price">$46.50</h1>
+        </div>
+      </div>
+  
+      <button class="btn order-btn">Start New Order</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/raf0411" target="_blank">@raf0411</a>.
+    </div>
+  </footer>
+</body>
+</html>

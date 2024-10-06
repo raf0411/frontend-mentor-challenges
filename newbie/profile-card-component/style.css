@@ -1,0 +1,113 @@
+:root{
+  --clr-primary-100: hsl(185, 75%, 39%);
+  --clr-primary-200: hsl(229, 23%, 23%);
+  --clr-neutral-100: hsl(0, 0%, 59%);
+}
+
+body{
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1em;
+  background-color: var(--clr-primary-100);
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 52vw bottom 35vh, 
+  left 48vw top 52vh;
+  height: 100vh;
+  width: 100%;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  flex-direction: column;
+}
+
+.card-container{
+  width: 21.9rem;
+  height: 25.5rem;
+  background-color: #fefefe;
+  border-radius: 1rem;
+}
+
+.profile-background{
+  border-radius: 1rem 1rem 0 0;
+  position: relative;
+  width: 21.9rem;
+}
+
+.profile-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container .profile-pic{
+  width: 5rem;
+  border-radius: 3rem;
+  border-color: #fefefe;
+  border-width: 0.3rem;
+  border-style: solid;
+  margin-top: -3rem;
+  z-index: 99;
+}
+
+.profile-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.profile-info .profile-name{
+  color: var(--clr-primary-200);
+  font-size: 1.2em;
+}
+
+.profile-info .profile-age{
+  color: var(--clr-neutral-100);
+  font-weight: 400;
+}
+
+.profile-info .profile-city{
+  color: var(--clr-neutral-100);
+  margin: 0;
+  margin-top: -0.5rem;
+}
+
+.profile-stats{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  column-gap: 3rem;
+  border-style: solid;
+  border-width: 0.1rem 0 0 0;
+  border-color: #EDEDED;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: 1rem;
+}
+
+.text-container{
+  margin-top: 2rem;
+}
+
+.text-container h3{
+  color: var(--clr-primary-200);
+  padding: 0;
+  margin: 0;
+}
+
+.text-container p{
+  color: var(--clr-neutral-100);
+  padding: 0;
+  margin: 0;
+  margin-top: 0.3rem;
+  font-size: 0.8em;
+}

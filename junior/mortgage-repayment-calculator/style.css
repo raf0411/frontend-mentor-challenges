@@ -1,0 +1,345 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+:root{
+  --clr-lime: hsl(61, 70%, 52%);
+  --clr-red: hsl(4, 69%, 50%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-slate-100: hsl(202, 86%, 94%);
+  --clr-slate-300: hsl(203, 41%, 72%);
+  --clr-slate-500: hsl(200, 26%, 54%);
+  --clr-slate-700: hsl(200, 24%, 40%);
+  --clr-slate-800: hsl(202, 56%, 12%);
+  --clr-slate-900: hsl(202, 55%, 16%);
+
+  --fw-normal: 500;
+  --fw-bold: 700;
+}
+
+*, *::after, *::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input{
+  outline: none;
+}
+
+img{
+  width: max-content;
+}
+
+button{
+  font: inherit;
+  cursor: pointer;
+}
+
+body{
+  min-height: 100dvh;
+  font-size: 16px;
+  font-weight: var(--fw-normal);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  display: grid;
+  place-items: center;
+  background-color: var(--clr-slate-100);
+}
+
+h1{
+  font-size: 1.3rem;
+}
+
+main{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  max-width: 1100px;
+  width: 1100px;
+  margin: 0 auto;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr-white);
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  margin-top: 3rem;
+}
+
+.left-container{
+  height: 100%;
+  padding: 2rem;
+  color: var(--clr-slate-900);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.left-container .header-left{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.clear-btn{
+  border: none;
+  background: none;
+  text-decoration: underline;
+  color: var(--clr-slate-500);
+  transition: .5s;
+}
+
+.clear-btn:hover{
+  opacity: .8;
+}
+
+.clear-btn:active{
+  opacity: .5;
+}
+
+.left-container form{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+form .input{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: .825rem;
+}
+
+form .input .inner-ma-input{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.inner-ma-input span{
+  background-color: var(--clr-slate-100);
+  color: var(--clr-slate-700);
+  display: grid;
+  place-items: center;
+  width: 50px;
+  position: absolute; 
+  height: 45px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+form .input .inner-input{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input .inner-input span{
+  background-color: var(--clr-slate-100);
+  color: var(--clr-slate-700);
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 45px;
+  margin-left: -40px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.inner-input #years{
+  width: 70px;
+  margin-left: -70px;
+}
+
+.input input[type="number"]{
+  border-radius: 4px;
+  border: 2px solid hsla(0, 0%, 0%, .4);
+  height: 40px;
+  width: 100%;
+  font: inherit;
+  font-weight: var(--fw-bold);
+  z-index: 10;
+  background: transparent;
+  transition: .5s;
+}
+
+.inner-input input[type="number"]:focus, .inner-ma-input input[type="number"]:focus{
+  border: 2px solid var(--clr-lime);
+}
+
+.inner-input input[type="number"]:focus + span, .inner-ma-input input[type="number"]:focus + span{
+  background-color: var(--clr-lime);
+}
+
+#mortgage-amount{
+  padding: 1.3em 1em 1.3em 4em;
+  width: 100%;
+}
+
+#interest-rate{
+  padding: 1.3em 3em 1.3em 1em;
+}
+
+#mortgage-term{
+  padding: 1.3em 5em 1.3em 1em;
+}
+
+form .term-rate{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+form label, form #mortgage-type-text{
+  font-size: .925rem;
+  color: var(--clr-slate-700);
+}
+
+form .mortgage-type{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: .8rem;
+}
+
+.mortgage-type .radio-box{
+  height: 40px;
+  border: 2px solid hsla(0, 0%, 0%, .4);
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.mortgage-type .radio-box:has(input[type="radio"]:focus){
+  background-color: hsla(61, 70%, 52%, .2);
+  border: 2px solid var(--clr-lime);
+}
+
+.radio-box input[type="radio"]{
+  cursor: pointer;
+  transition: 2s;
+}
+
+.radio-box label{
+  font-weight: bold;
+  color: var(--clr-slate-900);
+}
+
+form .submit-btn{
+  border: none;
+  font-weight: var(--fw-bold);
+  background-color: var(--clr-lime);
+  color: var(--clr-slate-900);
+  padding: 1em 2em 1em 3.5em;
+  border-radius: 32px;
+  background-size: 20px;
+  background-image: url(./assets/images/icon-calculator.svg);
+  background-repeat: no-repeat;
+  background-position: 25px center;
+  transition: .5s;
+}
+
+form .submit-btn:active{
+  background-color: hsla(61, 70%, 52%, .5);
+}
+
+.right-container{
+  height: 100%;
+  width: 50%;
+  padding: 2rem;
+  color: var(--clr-white);
+  background-color: var(--clr-slate-900);
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 64px;
+}
+
+.right-container .empty{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 100%;
+}
+
+.empty p {
+  color: var(--clr-slate-300);
+  text-align: center;
+}
+
+.right-container .completed{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  color: var(--clr-slate-300);
+}
+
+.completed .header-right{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header-right h1 {
+  color: var(--clr-white);
+}
+
+.completed .results{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  background-color: var(--clr-slate-800);
+  border-radius: 8px;
+  border-top: 4px solid var(--clr-lime);
+  padding: 2rem;
+}
+
+.results .upper-result{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--clr-slate-700);
+}
+
+.results .upper-result .monthly-result{
+  font-size: 3.3rem;
+  color: var(--clr-lime);
+}
+
+.results .bottom-result{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5rem;
+}
+
+.results .bottom-result .repay-result{
+  color: var(--clr-white);
+  font-size: 1.5rem;
+}
+
+#error-label{
+  color: var(--clr-red);
+  visibility: hidden;
+}
