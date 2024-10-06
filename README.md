@@ -20,7 +20,7 @@ My Frontend Mentor Profile [@raf_0411](https://www.frontendmentor.io/profile/raf
 * [Stats Preview Card](https://raf0411.github.io/frontend-mentor-challenges/newbie/stats-preview-card) **HTML** | **CSS** <sup>grid + flex + root + pseudo-element</sup>
 
 ## Junior
-* [Advice Generator App](https://raf0411.github.io/frontend-mentor-challenges/junior/advice-generator-app) **HTML** | **CSS** | **JS**
+* [Advice Generator App](https://raf0411.github.io/frontend-mentor-challenges/junior/advice-generator-app) **HTML** | **CSS** | **JS** | **API**
 * [Fylo Landing Page](https://raf0411.github.io/frontend-mentor-challenges/newbie/fylo-landing-page) **HTML** | **CSS** <sup>grid & flex</sup>
 * [Mortgage Repayment Calculator](https://raf0411.github.io/frontend-mentor-challenges/newbie/mortgage-repayment-calculator) **HTML** | **CSS** <sup>flex & css root</sup> | **JS**
 * [Product List with Cart Main](https://raf0411.github.io/frontend-mentor-challenges/newbie/product-list-with-cart-main) **HTML** | **CSS** <sup>flex & grid</sup> | **JS**
