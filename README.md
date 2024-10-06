@@ -1,7 +1,6 @@
 # FRONTEND-MENTOR-CHALLENGES
----
+
 This repo contains my solutions to the frontend mentor challenges as a way for me to improve my frontend skills.
----
 
 These challenges were obtain from the [Frontend Mentor Website](https://www.frontendmentor.io)
 
