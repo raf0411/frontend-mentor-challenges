@@ -23,3 +23,4 @@ My Frontend Mentor Profile [@raf_0411](https://www.frontendmentor.io/profile/raf
 * [Fylo Landing Page](https://raf0411.github.io/frontend-mentor-challenges/junior/fylo-landing-page) **HTML** | **CSS** <sup>grid & flex</sup>
 * [Mortgage Repayment Calculator](https://raf0411.github.io/frontend-mentor-challenges/junior/mortgage-repayment-calculator) **HTML** | **CSS** <sup>flex & css root</sup> | **JS**
 * [Product List with Cart Main](https://raf0411.github.io/frontend-mentor-challenges/junior/product-list-with-cart-main) **HTML** | **CSS** <sup>flex & grid</sup> | **JS**
+* [Newsletter sign-up form with success message](https://raf0411.github.io/frontend-mentor-challenges/junior/newsletter-sign-up-form) **HTML** | **CSS** <sup>flex & grid</sup> | **JS**
