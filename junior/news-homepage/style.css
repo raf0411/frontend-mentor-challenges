@@ -1,0 +1,16 @@
+:root{
+  --clr-orange-100: hsl(35, 77%, 62%);
+  --clr-red-100: hsl(5, 85%, 63%);
+  --clr-white-100: hsl(36, 100%, 99%);
+  --clr-blue-100: hsl(233, 8%, 79%);
+  --clr-blue-200: hsl(236, 13%, 42%);
+  --clr-blue-500: hsl(240, 100%, 5%);
+
+  --fw-light: 400;
+  --fw-regular: 700;
+  --fw-bold: 800;
+}
+
+p{
+  font-size: 15px;
+}
