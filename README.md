@@ -24,3 +24,4 @@ My Frontend Mentor Profile [@raf_0411](https://www.frontendmentor.io/profile/raf
 * [Mortgage Repayment Calculator](https://raf0411.github.io/frontend-mentor-challenges/junior/mortgage-repayment-calculator) **HTML** | **CSS** <sup>flex & css root</sup> | **JS**
 * [Product List with Cart Main](https://raf0411.github.io/frontend-mentor-challenges/junior/product-list-with-cart-main) **HTML** | **CSS** <sup>flex & grid</sup> | **JS**
 * [Newsletter sign-up form with success message](https://raf0411.github.io/frontend-mentor-challenges/junior/newsletter-sign-up-form) **HTML** | **CSS** <sup>flex & grid</sup> | **JS**
+* [News Homepage](https://raf0411.github.io/frontend-mentor-challenges/junior/news-homepage) **HTML** | **CSS**<sup>flex</sup>
