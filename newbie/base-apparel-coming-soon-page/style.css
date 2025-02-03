@@ -1,0 +1,112 @@
+:root{
+  --clr-red-100: hsl(0, 36%, 70%);
+  --clr-red-500: hsl(0, 93%, 68%);
+  --clr-gray-100: hsl(0, 6%, 24%);
+  --clr-gradient-200: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --clr-gradient-600: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 600;
+}
+
+*, *::after{
+  margin: 0;
+  padding: 0;
+}
+
+button, input{
+  border: none;
+  font: inherit;
+}
+
+img{
+  width: 100%;
+}
+
+body{
+  background: var(--clr-gradient-200);
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--clr-red-100);
+  font-weight: var(--fw-regular);
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo{
+  width: 150px;
+}
+
+.left-side{
+  background: url(./images/bg-pattern-desktop.svg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 2rem 7rem;
+  gap: 5rem;
+  width: 50%;
+  background-repeat: no-repeat;
+}
+
+.left-side .text-content-container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.text-content-container h1{
+  font-weight: var(--fw-light);
+  font-size: 4rem;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+}
+
+.text-content-container p{
+  line-height: 25px;
+  width: 70%;
+}
+
+.text-content-container h1 span{
+  color: var(--clr-gray-100);
+  font-weight: var(--fw-bold);
+}
+
+.right-side img{
+  height: fit-content;
+  width: 100%;
+}
+
+.email{
+  background: transparent;
+  border-radius: 30px;
+  border: 1px solid var(--clr-red-100);
+  width: 60%;
+  height: 50px;
+  padding: 0 2rem;
+  color: var(--clr-red-100);
+  outline: none;
+}
+
+.submit-btn{
+  background: var(--clr-gradient-600);
+  padding: .5rem 2.5rem;
+  height: 52px;
+  left: 100;
+  border-radius: 32px;
+  margin-left: -90px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.input-box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
