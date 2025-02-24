@@ -153,3 +153,10 @@ ul li{
   background-color: var(--clr-green);
   transform: scale(.9);
 }
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
