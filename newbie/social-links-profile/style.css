@@ -1,0 +1,155 @@
+:root{
+  --clr-green: hsl(75, 94%, 57%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey-700: hsl(0, 0%, 20%);
+  --clr-grey-800: hsl(0, 0%, 12%);
+  --clr-grey-900: hsl(0, 0%, 8%);
+
+  --fw-light: 400;
+  --fw-regular: 600;
+  --fw-bold: 700;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  background-color: var(--clr-grey-900);
+  color: var(--clr-white);
+  font-family: "Inter", serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul{
+  list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+button{
+  cursor: pointer;
+}
+
+main{
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+}
+
+.card{
+  background-color: var(--clr-grey-800);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  gap: 1.5rem;
+}
+
+.card .upper-section, .card .bottom-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card .upper-section{
+  gap: .2rem;
+}
+.card .bottom-section{
+  gap: 1rem;
+  width: 100%;
+}
+
+.profile-image{
+  width: 75px;
+  border-radius: 50%;
+}
+
+.name{
+  font-weight: var(--fw-bold);
+  font-size: 1.3rem;
+}
+
+.location{
+  font-size: .725rem;
+  color: var(--clr-green);
+}
+
+.profile-description{
+  font-size: .7rem;
+  font-weight: var(--fw-light);
+}
+
+ul{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .7rem;
+  width: 100%;
+}
+
+ul li{ 
+  width: 100%;
+}
+
+.link-btn{
+  text-align: center;
+  display: inline-block;
+  width: 250px;
+  border-radius: 6px;
+  font-size: .825rem;
+  padding: .6rem 0;
+  background-color: var(--clr-grey-700);
+  transition: .2s;
+}
+
+.link-btn:hover{
+  color: var(--clr-grey-800);
+  background-color: var(--clr-green);
+  transform: scale(1.1);
+}
+
+.link-btn:active{
+  color: var(--clr-grey-800);
+  background-color: var(--clr-green);
+  transform: scale(.9);
+}
