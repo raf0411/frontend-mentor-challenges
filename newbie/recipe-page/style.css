@@ -1,0 +1,186 @@
+:root{
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-stone-100: hsl(30, 54%, 90%);
+  --clr-stone-150: hsl(30, 18%, 87%);
+  --clr-stone-600: hsl(30, 10%, 34%);
+  --clr-stone-900: hsl(24, 5%, 18%);
+  --clr-brown-800: hsl(14, 45%, 36%);
+  --clr-rose-800: hsl(332, 51%, 32%);
+  --clr-rose-50: hsl(330, 100%, 98%);
+
+  --primary-font: "Young Serif";
+  --secondary-font: "Outfit";
+
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--clr-stone-600);
+  background-color: var(--clr-stone-100);
+  font-family: var(--secondary-font), serif;
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--primary-font), serif;
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+main{
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+}
+
+.card{
+  background-color: var(--clr-white);
+  margin: 100px 0;
+  width: 50%;
+  padding: 2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card * h2{
+  color: var(--clr-brown-800);
+}
+
+.recipe-title{
+  font-size: 2rem;
+  color: var(--clr-stone-900);
+}
+
+.main-section{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.recipe-img{
+  border-radius: 8px;
+}
+
+.recipe-desc{
+  font-size: .9rem;
+}
+
+.time-card{
+  background-color: var(--clr-rose-50);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  border-radius: 8px;
+}
+
+.time-card h3{
+  font-family: var(--secondary-font), serif;
+  color: var(--clr-rose-800);
+}
+
+ul, ol{
+  margin-left: 1.5rem;
+}
+
+ul li, ol li{
+  margin-bottom: 5px;
+  padding-left: 25px;
+}
+
+ol li::marker {
+  font-weight: var(--fw-bold);
+  color: var(--clr-brown-800);
+}
+.time-card ul li span{
+  font-weight: var(--fw-bold);
+}
+
+hr{
+  border: 1px solid var(--clr-stone-150);
+}
+
+.card section{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.instructions-section ol li span{
+  font-weight: var(--fw-bold);
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: .5rem 5%;
+}
+
+tr:last-child td{
+  border-bottom: none;
+}
+
+tr td:last-child{
+  color: var(--clr-brown-800);
+  font-weight: var(--fw-bold);
+}
+
+@media (max-width: 472px){
+  .card{
+    width: 100%;
+    margin: 0;
+    padding: 0 0 2rem 0;
+  }
+
+  .recipe-img{
+    border-radius: 0px;
+  }
+
+  .card section{
+    padding: 0 2rem;
+  }
+
+  .time-card{
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  hr{
+    margin: 0 auto;
+    width: 85%;
+  }
+}
