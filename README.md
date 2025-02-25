@@ -18,6 +18,7 @@ My Frontend Mentor Profile [@raf_0411](https://www.frontendmentor.io/profile/raf
 * [Single Price Grid Component](https://raf0411.github.io/frontend-mentor-challenges/newbie/single-price-grid-component) **HTML** | **CSS** <sup>grid & flex</sup>
 * [Stats Preview Card](https://raf0411.github.io/frontend-mentor-challenges/newbie/stats-preview-card) **HTML** | **CSS** <sup>grid + flex + root + pseudo-element</sup>
 * [Social Links Profile](https://raf0411.github.io/frontend-mentor-challenges/newbie/social-links-profile) **HTML** | **CSS** <sup>grid + flex</sup>
+* [Recipe Page](https://raf0411.github.io/frontend-mentor-challenges/newbie/recipe-page) **HTML** | **CSS** <sup>grid + flex</sup>
 
 ## Junior
 * [Advice Generator App](https://raf0411.github.io/frontend-mentor-challenges/junior/advice-generator-app) **HTML** | **CSS** | **JS** | **API**
