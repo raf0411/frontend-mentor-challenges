@@ -71,7 +71,7 @@ main{
   margin: 100px 0;
   width: 50%;
   padding: 2rem;
-  border-radius: 12px;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -157,6 +157,13 @@ tr:last-child td{
 tr td:last-child{
   color: var(--clr-brown-800);
   font-weight: var(--fw-bold);
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 472px){
