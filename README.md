@@ -19,6 +19,7 @@ My Frontend Mentor Profile [@raf_0411](https://www.frontendmentor.io/profile/raf
 * [Stats Preview Card](https://raf0411.github.io/frontend-mentor-challenges/newbie/stats-preview-card) **HTML** | **CSS** <sup>grid + flex + root + pseudo-element</sup>
 * [Social Links Profile](https://raf0411.github.io/frontend-mentor-challenges/newbie/social-links-profile) **HTML** | **CSS** <sup>grid + flex</sup>
 * [Recipe Page](https://raf0411.github.io/frontend-mentor-challenges/newbie/recipe-page) **HTML** | **CSS** <sup>grid + flex</sup>
+* [Order summary Component](https://raf0411.github.io/frontend-mentor-challenges/newbie/order-summary-component) **HTML** | **CSS** <sup>grid + flex</sup>
 
 ## Junior
 * [Advice Generator App](https://raf0411.github.io/frontend-mentor-challenges/junior/advice-generator-app) **HTML** | **CSS** | **JS** | **API**
