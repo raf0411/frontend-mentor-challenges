@@ -5,6 +5,7 @@
   --clr-yellow-500: hsl(39, 100%, 71%);
   --clr-white: hsl(0, 0%, 100%);
   --clr-black: hsl(0, 0%, 7%);
+  --clr-background: hsl(0, 0%, 96%);
 
   --fw-regular: 400;
   --fw-bold: 500;
@@ -19,6 +20,7 @@
 }
 
 body {
+  background-color: var(--clr-background);
   font-family: 'DM Sans', serif;
   font-weight: var(--fw-regular);
   font-size: 18px;
@@ -43,9 +45,61 @@ p {
   text-wrap: pretty;
 }
 h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--fw-bold);
   text-wrap: balance;
 }
 
 #root, #__next {
   isolation: isolate;
+}
+
+.item-light-yellow{
+  background-color: var(--clr-yellow-100);
+}
+
+.item-yellow{
+  background-color: var(--clr-yellow-500);
+}
+
+.item-purple{
+  color: var(--clr-white);
+  background-color: var(--clr-purple-500);
+}
+
+.item-light-purple{
+  background-color: var(--clr-purple-100);
+}
+
+.item-light-yellow{
+  background-color: var(--clr-yellow-100);
+}
+
+.item-white{
+  background-color: var(--clr-white);
+}
+
+main{
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+}
+
+.grid > div{
+  border-radius: .5rem;
+}
+
+.item-1{grid-area: 'item1';}
+.item-2{grid-area: 'item2';}
+.item-3{grid-area: 'item3';}
+.inner-grid{grid-area: 'inner-grid';}
+.item-4{grid-area: 'item4';}
+.item-5{grid-area: 'item5';}
+.item-6{grid-area: 'item6';}
+
+.grid{
+  display: grid;
+  grid-template-areas: 
+    'item1 item2 item3'
+    'item1 inner-grid item3'
+    'item';
 }
